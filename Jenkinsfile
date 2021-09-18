@@ -1,5 +1,9 @@
 pipeline{
     agent any
+    tools {
+	maven 'Maven 3'
+	jdk 'Java 8'
+    }	
     stages {
         stage('Pull the code') {
             steps{
